@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&display=swap');
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 800
+
+body {
+	font-family: "Moderustic", sans-serif !important;
+	font-optical-sizing: auto;
+	font-weight: <weight>;
+	font-style: normal;
+}
+
+@media only screen and (min-width: 480px) {
+	.listing-mobile {
+		display: none !important;
+	}
+	.listing-desktop {
+/*		display: initial;*/
+	}
+}
+
+
+@media only screen and (max-width: 480px) {
+	.listing-mobile {
+/*		display: initial;*/
+	}
+	.listing-desktop {
+		display: none !important;
+	}
+}
